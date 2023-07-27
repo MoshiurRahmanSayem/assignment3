@@ -37,58 +37,70 @@
 
 
 
-      <nav>
-        <div class=" md:my-2 lg:my-12">
-          <div
-            class="navbar lg:bg-primary-colour lg:text-white rounded-full py-7 px-5 xl:px-12">
-            <div class="navbar-start w-0 lg:w-1/2">
-              <div class="hidden lg:flex">
-                <ul class="menu menu-horizontal hover:text-white px-1 text-lg">
-                  <li><a class="hover:text-white" href="#">Home</a></li>
-                  <li><a class="hover:text-white" href="#">About Us</a></li>
-                  <li><a class="hover:text-white" href="#">Shop</a></li>
-                  <li><a class="hover:text-white" href="#">All Fruits</a></li>
+
+      <nav class=" lg:bg-[#F85559] mx-3 my-6 lg:rounded-full lg:mx-20">
+
+        <div class="navbar text-black lg:text-white ">
+            <div class="navbar-start">
+
+                <a class="flex lg:hidden btn btn-ghost normal-case text-xl"><img class="h-13 w-7"
+                        src="./images/logo-icon.png" alt="">Fruit Brust</a>
+
+
+                <ul class="hidden lg:flex menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
                 </ul>
-              </div>
+
+
             </div>
-            <div class="navbar-center flex-1 lg:flex-auto">
-              <a class="normal-case text-xl "><img class="" src="./images/logo.png" alt="logo"/></a>
-              <a class="normal-case text-xl block lg:hidden"><img class="" src="./images/logo-black.png" alt="logo"/></a>
+            <div class="navbar-center hidden lg:flex">
+                <a class="btn btn-ghost normal-case text-xl"><img class="h-13 w-7" src="./images/logo-icon.png"
+                        alt="">Fruit Brust</a>
+
             </div>
             <div class="navbar-end">
-              <div class="join hidden lg:flex">
-                <input
-                  class="input join-item rounded-full focus:outline-0 text-primary-colour"
-                  placeholder="Search here"
-                />
-                <button class="btn join-item bg-white rounded-r-full border-0">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </div>
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
 
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content right-1/2 mt-3 z-30 p-2 shadow bg-base-100 text-primary-colour rounded-box w-52">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="#">All Fruits</a></li>
-                </ul>
-              </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-20 p-2 shadow bg-base-100 rounded-box w-40 absolute -left-24">
+                        <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    <li><div class="lg:hidden flex  bg-white text-gray-400 h-12 w-auto rounded-full">
+
+                        <input type="text" placeholder="Search" class="input  rounded-full w-full max-w-xs" />
+                        <img class="h-5 w-5 mr-3" src="./images/search.png" alt="">
+
+                    </div></li>
+                      </ul>
+
+                </div>
+                <div class="hidden lg:flex items-center bg-white text-gray-400 h-12 w-auto rounded-full">
+
+                    <input type="text" placeholder="Search here" class="input  rounded-full w-full max-w-xs" />
+                    <img class="h-5 w-5 mr-3" src="./images/search.png" alt="">
+
+                </div>
             </div>
-          </div>
+
+
         </div>
-      </nav>  
+
+
+    </nav>
+
+
+
 
 
 
